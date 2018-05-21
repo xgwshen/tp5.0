@@ -26,11 +26,12 @@ class Index
 //            echo '空字符';
 //        }
 //        echo gettype($a);
-        if($a==='0'){
-            echo '0';
-        }else{
-            echo 'string';
-        }
+//        if($a==='0'){
+//            echo '0';
+//        }else{
+//            echo 'string';
+//        }
+        $this->display('index/index');
     }
     public function login($id){
         echo 'login/route--'.$id;
@@ -40,6 +41,7 @@ class Index
         dump($request);
     }
     public function uploads(){
-        echo '上传文件';
+//        echo '上传文件';
+
     }
 }
