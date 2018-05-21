@@ -39,4 +39,7 @@ class Index
         $request = request();
         dump($request);
     }
+    public function uploads(){
+        echo '上传文件';
+    }
 }
