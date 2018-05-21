@@ -14,9 +14,9 @@ class Index
     }
 
     public function redis(){
-//        import('Rediso',EXTEND_PATH);
-//        $redis = new \Rediso();
-//        var_dump($redis);
-        echo 1111;
+        import('Rediso',EXTEND_PATH);
+        $redis = new \Rediso();
+        var_dump($redis);
+
     }
 }
