@@ -13,7 +13,7 @@ class Index extends Model{
         return 'heelo';
     }
 
-    private function nosCan(){
+    protected function nosCan(){
         return 'noscan';
     }
 }
