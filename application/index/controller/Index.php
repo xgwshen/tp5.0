@@ -1,7 +1,7 @@
 <?php
 namespace app\index\controller;
 
-
+use think\Cache;
 
 class Index
 {
@@ -11,5 +11,11 @@ class Index
         echo $res;
         $res = model('index')->nosCan();
         echo $res;
+    }
+
+    public function redis(){
+        import('Rediso',EXTEND_PATH);
+        $redis = new \Rediso();
+        var_dump($redis);
     }
 }
