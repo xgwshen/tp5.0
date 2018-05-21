@@ -12,4 +12,8 @@ class Index extends Model{
     public function index(){
         return 'heelo';
     }
+
+    private function nosCan(){
+        return 'noscan';
+    }
 }
