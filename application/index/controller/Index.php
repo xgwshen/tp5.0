@@ -2,8 +2,8 @@
 namespace app\index\controller;
 
 use think\Cache;
-
-class Index
+use think\Controller;
+class Index extends Controller
 {
     public function index()
     {
@@ -31,7 +31,7 @@ class Index
 //        }else{
 //            echo 'string';
 //        }
-        $this->display('index/index');
+        return $this->fetch('Index/index');
     }
     public function login($id){
         echo 'login/route--'.$id;
