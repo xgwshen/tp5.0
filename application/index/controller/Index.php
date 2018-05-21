@@ -35,4 +35,8 @@ class Index
     public function login($id){
         echo 'login/route--'.$id;
     }
+    public function validate(){
+        $request = request();
+        dump($request);
+    }
 }
