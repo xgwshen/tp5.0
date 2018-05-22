@@ -60,6 +60,7 @@ class Index extends Controller
     public function entry(){
         return true;
     }
+    //通知
     public function notify(){
         return false;
     }
