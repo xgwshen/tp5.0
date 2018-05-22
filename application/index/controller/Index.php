@@ -64,4 +64,7 @@ class Index extends Controller
     public function notify(){
         return false;
     }
+    public function master(){
+        return 'git/master';
+    }
 }
