@@ -13,6 +13,10 @@ class Index extends Controller
 //        return xml(['data'=>$data,'code'=>1,'message'=>'操作完成']);xml
 //        return jsonp(['data'=>$data,'code'=>1,'message'=>'操作完成']);//jsonpReturn({"data":["name","age"],"code":1,"message":"操作完成"});
 //        return view(['data'=>$data,'code'=>1,'message'=>'操作完成']);//jsonpReturn({"data":["name","age"],"code":1,"message":"操作完成"});
+        //用户表
+        //红包表
+        //权限表
+        //会员表
     }
 //    public function index()
 //    {
