@@ -57,4 +57,7 @@ class Index extends Controller
         $data['name'] = '..';
         return $this->fetch();
     }
+    public function entry(){
+        return true;
+    }
 }
