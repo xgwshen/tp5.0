@@ -25,7 +25,7 @@
 use think\Route;
 // 注册路由到index模块的News控制器的read操作 any方法其实和rule方法是一样的，区别在于不用写第三个参数。 不推荐使用return 数组的形式 使用route类更加直观和方便
 //Route::get('login/:id','index/index/login',['id'=>'/d']);
-Route::get('hello','index/index/hello');
+//Route::get('hello','index/index/hello');
 //Route::rule('hello/:name','index/Index/hello','get');
 
 //Route::any('hello/:name','index/index/hello',[
