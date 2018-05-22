@@ -67,4 +67,8 @@ class Index extends Controller
     public function master(){
         return 'git/master';
     }
+    //dev
+    public function dev(){
+        return 'git/dev';
+    }
 }
