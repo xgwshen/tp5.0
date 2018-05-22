@@ -5,8 +5,8 @@ use think\Cache;
 use think\Controller;
 class Index extends Controller
 {
-    public function hello(){
-        echo 'hello world! ';
+    public function hello($name){
+        echo 'hello world! '.$name;
     }
 //    public function index()
 //    {
