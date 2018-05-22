@@ -9,7 +9,8 @@ class Index extends Controller
     public function hello($name){
         $data = ['name','age'];
 //        return ['data'=>$data,'code'=>1,'message'=>'操作完成'];
-        return json(['data'=>$data,'code'=>1,'message'=>'操作完成']);
+//        return json(['data'=>$data,'code'=>1,'message'=>'操作完成']);json
+//        return xml(['data'=>$data,'code'=>1,'message'=>'操作完成']);xml
     }
 //    public function index()
 //    {
