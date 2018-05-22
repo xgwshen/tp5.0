@@ -26,7 +26,9 @@ class Index extends Controller
             return $this->fetch('Index/index');
         }
     }
-
+    public function img($img){
+        return $this->fetch('index/img',['img'=>$img]);
+    }
     public function upload(){
         // 获取表单上传文件 例如上传了001.jpg
         $file = request()->file('image');
