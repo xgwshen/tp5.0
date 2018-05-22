@@ -42,7 +42,7 @@ class Index extends Controller
 //                echo $info->getSaveName();
                 // 输出 42a79759f284b767dfcb2a0197904287.jpg
 //                echo $info->getFilename();
-                $this->fetch('index/index',['img'=>$info->getSaveName(),]);
+               $this->redirect('index/img',['img'=>$info->getSaveName(),]);
             }else{
                 // 上传失败获取错误信息
                 echo $file->getError();
