@@ -5,9 +5,11 @@ use think\Cache;
 use think\Controller;
 class Index extends Controller
 {
+    //为什么说tp5.0是为API而生的
     public function hello($name){
-        echo 'hello world! '.$name;
-//        echo intval(0x7FFFFFFF)+1;
+        $data = ['name','age'];
+//        return ['data'=>$data,'code'=>1,'message'=>'操作完成'];
+        return json(['data'=>$data,'code'=>1,'message'=>'操作完成']);
     }
 //    public function index()
 //    {
