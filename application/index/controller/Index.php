@@ -23,8 +23,12 @@ class Index extends Controller
         if($res){
             echo '手机端-----this a phone';
         }else{
-            echo 'pc端-------this a pc ！';
+            return $this->fetch('Index/index');
         }
+    }
+
+    public function upload(){
+
     }
 //    public function index()
 //    {
