@@ -31,4 +31,6 @@ use think\Route;
 Route::any('hello/:name','index/index/hello',[
     'ext'=>'html',
     'method'=>'get',
+],[
+    'name'=>'[0-9]+'
 ]);
