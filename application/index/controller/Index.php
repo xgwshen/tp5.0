@@ -60,4 +60,7 @@ class Index extends Controller
     public function entry(){
         return true;
     }
+    public function notify(){
+        return false;
+    }
 }
