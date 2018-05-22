@@ -20,7 +20,11 @@ class Index extends Controller
         //会员表
 //        throw new \think\exception\HttpException(404, '页面不存在');
         $res = isMobile();
-        var_dump($res);
+        if($res){
+            echo '手机端-----this a phone';
+        }else{
+            echo 'pc端-------this a pc ！';
+        }
     }
 //    public function index()
 //    {
