@@ -7,7 +7,7 @@ use think\exception\HttpException;
 class Index extends Controller
 {
     //为什么说tp5.0是为API而生的
-    public function hello($name){
+    public function hello(){
 //        $data = ['name','age'];
 //        return ['data'=>$data,'code'=>1,'message'=>'操作完成'];
 //        return json(['data'=>$data,'code'=>1,'message'=>'操作完成']);json
@@ -18,7 +18,9 @@ class Index extends Controller
         //红包表
         //权限表
         //会员表
-        throw new \think\exception\HttpException(404, '页面不存在');
+//        throw new \think\exception\HttpException(404, '页面不存在');
+        $res = isMobile();
+        echo  $res;
     }
 //    public function index()
 //    {
