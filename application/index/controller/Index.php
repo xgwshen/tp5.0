@@ -49,4 +49,8 @@ class Index extends Controller
             }
         }
     }
+    //自怨自艾
+    public function test(){
+        echo '本地可以 ， 但线上就不行 ，这是很尴尬的事情 。我也是没办法的 ！';
+    }
 }
