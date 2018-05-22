@@ -12,7 +12,7 @@ class Index extends Controller
 //        return json(['data'=>$data,'code'=>1,'message'=>'操作完成']);json
 //        return xml(['data'=>$data,'code'=>1,'message'=>'操作完成']);xml
 //        return jsonp(['data'=>$data,'code'=>1,'message'=>'操作完成']);//jsonpReturn({"data":["name","age"],"code":1,"message":"操作完成"});
-        return jsonp(['data'=>$data,'code'=>1,'message'=>'操作完成']);//jsonpReturn({"data":["name","age"],"code":1,"message":"操作完成"});
+//        return view(['data'=>$data,'code'=>1,'message'=>'操作完成']);//jsonpReturn({"data":["name","age"],"code":1,"message":"操作完成"});
     }
 //    public function index()
 //    {
