@@ -84,5 +84,5 @@ function isMobile()
 }
 
 function luoji(){
-    echo '11'
+    echo '112'
 }
