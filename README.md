@@ -20,7 +20,7 @@ ThinkPHP5在保持快速开发和大道至简的核心理念不变的同时，PH
  + 方便的自动生成定义
  + 真正惰性加载
  + 分布式环境支持
- + 更多的社交类库
+ + 更多的社交类库ss
 
 > ThinkPHP5的运行环境要求PHP5.4以上。
 > this just think can do it

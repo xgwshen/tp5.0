@@ -51,7 +51,33 @@ class Index extends Controller
     }
     //自怨自艾
     public function test(){
-        echo '本地可以 ， 但线上就不行 ，这是很尴尬的事情 。我也是没办法的 ！';
+        /**
+         * 总字段如下(并不是所有字段都要返回给客户端)：
+        1.最新版本号 ：newVersion
+        2.最小支持版本号 : minVersion
+        3.apk下载url : apkUrl
+        4.更新文案 : updateDescription
+        5.是否有更新 : isUpdate
+        6.是否强制更新 : forceUpdate
+         */
+
+        /**
+         * 在客户端请求参数中添加当前版本号currentVersion传输给后台，由后台根据客户端传过来的当前版本号currentVersion做相应的判断后给出是否强制更新。
+        后端逻辑如下：
+
+        如果currentVersion < newVersion,则isUpdate = true；
+
+        如果currentVersion < minVersion,则forceUpdate = true；
+
+        如果currentVersion >= minVersion,则forceUpdate = false;
+
+        如果有特殊需求可指定某个版本必须强制更新，如currentVersion == XXX,则forceUpdate = true;
+
+        如果currentVersion == newVersion，则isUpdate = false.
+
+        结论：
+        返回客户端的字段仅需要apk下载url : apkUrl、更新文案 : updateDescription、是否有更新 : isUpdate 、 是否强制更新 : forceUpdate 这四个字段即可。
+         */
     }
     public function key(){
         $data['name'] = '..';
