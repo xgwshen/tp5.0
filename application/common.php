@@ -82,3 +82,7 @@ function isMobile()
     }
     return false;
 }
+
+function luoji(){
+    echo '11'
+}
