@@ -12,4 +12,3 @@
 return [
     'connector' => 'Sync'
 ];
-//queue.php是什么意思 这个新文件 是管队列的吗
