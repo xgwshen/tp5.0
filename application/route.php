@@ -34,3 +34,4 @@ use think\Route;
 //],[
 //    'name'=>'[0-9]+'
 //]);
+Route::get('test','index/index/test');

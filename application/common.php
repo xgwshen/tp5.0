@@ -86,3 +86,19 @@ function isMobile()
 function luoji(){
     echo '1123456789';
 }
+
+
+/**
+ * 生日时间戳 获取所在 年龄区间
+ * @param  $birthday 时间戳
+ * @param  $year  年龄段  例:00  95
+ */
+function getAgeGroup($birthday)
+{
+    $two =  date('y', $birthday)[1];
+    if($two >= 5){
+        return date('y', $birthday)[0].'5';
+    } else {
+        return date('y', $birthday)[0].'0';
+    }
+}

@@ -6,6 +6,15 @@ use think\Controller;
 use think\exception\HttpException;
 class Index extends Controller
 {
+    public function test(){
+        $time = strtotime('1989-03-08');
+        $two =  date('y', $time)[1];
+        if($two >= 5){
+            return date('y', $time)[0].'5';
+        } else {
+            return date('y', $time)[0].'0';
+        }
+    }
     //为什么说tp5.0是为API而生的
     public function index(){
 //        $data = ['name','age'];
@@ -50,7 +59,7 @@ class Index extends Controller
         }
     }
     //自怨自艾
-    public function test(){
+    public function tesst(){
         /**
          * 总字段如下(并不是所有字段都要返回给客户端)：
         1.最新版本号 ：newVersion
