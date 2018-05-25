@@ -16,6 +16,46 @@ class Common extends Base{
         $uid = empty($this->datas['uid']) ? 0: $this->datas['uid'];
         $return = array();
 
+        //签到日历
+        $date = date('Y-m-d');
+        $calender['date'] = toYmdFullHanzi($date);
     }
 
+    /**
+     * @param $pwd
+     * @return array
+     */
+    function checkPwd($pwd) {
+        if($pwd == null) {
+            return ['code' => 0,'data' =>'', 'msg' => '密码不能为空'];
+        }
+        $pwd = trim($pwd);
+        if(strlen($pwd) < 6){
+            //必须大于6个字符
+            return ['code' => 0, 'data' => '', 'msg' => '密码必须大于等于6个字符'];
+
+        }
+        if (preg_match("/^[0-9]+$", $pwd)){
+            return ['code' =>0, 'data'=> '', 'msg' => '密码不能全部是数字,请包含数字 字母大小写或特殊字符'];
+
+        }
+        if(preg_match("^[a-zA-Z]+$", $pwd)){
+            return ['code' =>0, 'data'=> '', 'msg' => '密码不能全部是字母,请包含数字 字母大小写或特殊字符'];
+        }
+        if (preg_match('/^[0-9A-Z]+$/', $pwd)){
+            return ['code' => 0, 'data' => '', 'msg' => '请包含数字，字母大小写或者特殊字符'];
+        }
+
+        return ['code' => '1', 'data' =>'', 'msg' => '密度复杂度通过验证'];
+    }
+    function getAreaByPos($pos)
+    {
+        $arr = explode(',',$pos);
+        sort($arr);
+        $location = implode(',',$arr);
+        $request = "http://apis.map.qq.com/ws/geocoder/v1/?location=$location&key=$key";
+        $content = file_get_contents($request);
+        $area_arr = json_decode($content, true);
+        return $area_arr['result']['ad_info'];
+    }
 }
