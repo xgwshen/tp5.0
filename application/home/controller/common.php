@@ -58,4 +58,7 @@ class Common extends Base{
         $area_arr = json_decode($content, true);
         return $area_arr['result']['ad_info'];
     }
+    function sssxss(){
+
+    }
 }
