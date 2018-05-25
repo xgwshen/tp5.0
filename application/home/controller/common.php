@@ -59,6 +59,10 @@ class Common extends Base{
         return $area_arr['result']['ad_info'];
     }
     function sssxss(){
-
+        $time = date("Ymd");
+        $temp['uid'] = $uid ;
+        $temp['lasttime'] = time();
+        $temp['addtime'] = $time ;
+        $channel = empty($_GET['channel'])?0:$_GET['channel'];
     }
 }
