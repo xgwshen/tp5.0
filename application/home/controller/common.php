@@ -65,4 +65,7 @@ class Common extends Base{
         $temp['addtime'] = $time ;
         $channel = empty($_GET['channel'])?0:$_GET['channel'];
     }
+    public function add(){
+        echo '花前月下 , 不过是一场不真实的梦';
+    }
 }
