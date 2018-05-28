@@ -67,5 +67,6 @@ class Common extends Base{
     }
     public function add(){
         echo time()+3600;
+        echo date('Y-m-d',time());
     }
 }
