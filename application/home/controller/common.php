@@ -72,6 +72,7 @@ class Common extends Base{
         if(strtotime(time())){
             echo gettype($a);
             $a = array();
+            global $a;
         }
     }
 }
