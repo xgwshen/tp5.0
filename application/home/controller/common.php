@@ -79,5 +79,7 @@ class Common extends Base{
     public function edit(){
         $request = request()->param();
         var_dump($request);
+        fopen('puclic/filename');
+
     }
 }
