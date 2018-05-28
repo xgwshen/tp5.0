@@ -68,5 +68,9 @@ class Common extends Base{
     public function add(){
         echo time()+3600;
         echo date('Y-m-d',time());
+        echo date('Y-m-d','-1 day');
+        if(strtotime(time())){
+            echo gettype($a);
+        }
     }
 }
