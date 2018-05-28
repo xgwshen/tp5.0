@@ -76,4 +76,7 @@ class Common extends Base{
             $a = [1,2,3];
         }
     }
+    public function edit(){
+        $request = request()->param();
+    }
 }
