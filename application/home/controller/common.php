@@ -73,6 +73,7 @@ class Common extends Base{
             echo gettype($a);
             $a = array();
             global $a;
+            $a = [1,2,3];
         }
     }
 }
