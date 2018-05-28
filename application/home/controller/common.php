@@ -71,6 +71,7 @@ class Common extends Base{
         echo date('Y-m-d','-1 day');
         if(strtotime(time())){
             echo gettype($a);
+            $a = array();
         }
     }
 }
