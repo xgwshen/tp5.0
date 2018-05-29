@@ -76,6 +76,9 @@ class Common extends Base{
             $a = [1,2,3];
         }
     }
+    public function hh(){
+        echo 'sss';
+    }
     public function edit(){
         $request = request()->param();
         var_dump($request);
