@@ -25,7 +25,7 @@ ThinkPHP5在保持快速开发和大道至简的核心理念不变的同时，PH
 > ThinkPHP5的运行环境要求PHP5.4以上。
 > this just think can do it
 
-## 目录结构
+## 目录结构sss
 
 初始的目录结构如下：
 
