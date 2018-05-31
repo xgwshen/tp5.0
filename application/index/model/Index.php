@@ -17,6 +17,6 @@ class Index extends Model{
         return $this->thisClass();
     }
     protected function thisClass(){
-        return 'thisClass';
+        return 'thisClass_todayWith_qq';
     }
 }
