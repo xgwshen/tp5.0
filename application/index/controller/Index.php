@@ -54,9 +54,12 @@ class Index extends Controller
         return $this->fetch('index/img',['img'=>$img]);
     }
     public function secondDay(){
-        echo '我万万没有想到是 ，我刚到公司的第二天 ， 另一个小伙伴就离职了 。 人生的运气也是难以琢磨的。不是吗？ 我们唯有做好自己的事而已！';
+        echo '';
     }
     public function upload(){
+        $request = request()->file();
+//        dump($request);exit;
+        dump($_FILES);exit;
         // 获取表单上传文件 例如上传了001.jpg
         $file = request()->file('image');
 
